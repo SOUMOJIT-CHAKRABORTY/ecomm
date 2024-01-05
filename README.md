@@ -1,1 +1,1 @@
-## MERN Ecommerce
+## MERN Ecommerce with Redux

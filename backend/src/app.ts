@@ -3,7 +3,7 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 import express from "express";
 import http from "http";
-// import userRoute from "./routes/userRoute";
+import router from "./routes/userRoute";
 const app = express();
 const port = 3000;
 
@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-// app.use("/api/users", userRoute);
+app.use("/api/users", router);
 const server = http.createServer(app);
 
 server.listen(port, () => {

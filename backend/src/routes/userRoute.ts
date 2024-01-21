@@ -1,13 +1,18 @@
 import express from "express";
 import {
   createUser,
+  getAllUsers,
   loginUser,
   logoutCurrentUser,
 } from "../controllers/userController";
+import { authenticate, authorizeAdmin } from "../middlewares/authMiddleware";
 
 const router = express.Router();
 
-router.post("/", createUser);
+router
+  .route("/")
+  .post(createUser)
+  .get(authenticate, authorizeAdmin, getAllUsers);
 router.post("/auth", loginUser);
 router.post("/logout", logoutCurrentUser);
 

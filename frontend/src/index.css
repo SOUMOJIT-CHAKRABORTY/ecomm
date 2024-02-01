@@ -7,7 +7,11 @@ body {
   color: #fff;
 }
 
-input,
+input {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+  color: #ccc2c2;
+}
 textarea {
   color: #000;
 }

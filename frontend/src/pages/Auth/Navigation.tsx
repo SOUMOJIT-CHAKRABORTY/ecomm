@@ -13,6 +13,7 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useLogoutMutation } from "../../redux/api/userApiSlice";
+import { logout } from "../../redux/features/auth/authSlice";
 
 const Navigation = () => {
   const { userInfo } = useSelector((state: string) => state.auth);

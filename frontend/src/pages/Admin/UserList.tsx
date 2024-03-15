@@ -89,7 +89,7 @@ const UserList = () => {
                             onChange={(e) =>
                               setEditableUserName(e.target.value)
                             }
-                            className="w-full p-2 border-rounded-lg"
+                            className="w-full p-2 border-rounded-lg bg-[#0f0f10] text-white"
                           />
                           <button
                             onClick={() => updateHandler(user._id)}
@@ -120,7 +120,7 @@ const UserList = () => {
                             onChange={(e) =>
                               setEditableUserEmail(e.target.value)
                             }
-                            className="w-full p-2 border-rounded-lg"
+                            className="w-full p-2 border-rounded-lg bg-[#0f0f10] text-white"
                           />
                           <button
                             onClick={() => updateHandler(user._id)}

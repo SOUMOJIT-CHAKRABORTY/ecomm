@@ -40,6 +40,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.2",
     "express": "^4.17.1",
+    "flowbite": "^2.3.0",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "mongoose": "^8.1.0"

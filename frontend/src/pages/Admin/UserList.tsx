@@ -8,7 +8,7 @@ import Loader from "../../components/Loader";
 import Message from "../../components/Message";
 import { FaCheck, FaEdit, FaTimes, FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
-import { set } from "lodash";
+// import { set } from "lodash";
 
 const UserList = () => {
   const { data: users, refetch, isLoading, error } = useGetUsersQuery();

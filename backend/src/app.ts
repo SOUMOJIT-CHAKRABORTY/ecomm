@@ -3,10 +3,11 @@ import compression from "compression";
 import cookieParser from "cookie-parser";
 import express from "express";
 import http from "http";
-import userRouters from "./routes/userRoute";
-import connectDB from "./config/db";
 import dotenv from "dotenv";
+import connectDB from "./config/db";
+import userRouters from "./routes/userRoute";
 import catagoryRouters from "./routes/categoryRoute";
+import productRouters from "./routes/productRoutes";
 const app = express();
 const port = 3000;
 
@@ -23,6 +24,7 @@ app.get("/", (req, res) => {
 
 app.use("/api/users", userRouters);
 app.use("/api/category", catagoryRouters);
+app.use("/api/products", productRouters);
 const server = http.createServer(app);
 
 server.listen(port, () => {

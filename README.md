@@ -1,2 +1,2 @@
-## MERN Ecommerce with Redux
+## MERN Ecommerce with Redux and Typescript
 # API part done.

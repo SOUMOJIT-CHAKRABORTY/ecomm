@@ -8,6 +8,7 @@ import Loader from "../../components/Loader";
 import Message from "../../components/Message";
 import { FaCheck, FaEdit, FaTimes, FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
+import AdminMenu from "./AdminMenu";
 // import { set } from "lodash";
 
 const UserList = () => {
@@ -65,7 +66,7 @@ const UserList = () => {
           </Message>
         ) : (
           <div className="flex flex-col md:flex-row">
-            {/* <AdminMenu /> */}
+            <AdminMenu />
             <table className="w-full md:w-4/5 mx-auto">
               <thead>
                 <tr>
